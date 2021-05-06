@@ -1318,18 +1318,18 @@ pre {
 
 .table {
   width: 100%;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   background-color: transparent; }
   .table th,
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #dee2e6; }
+    border-bottom: 1px solid #000; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6; }
+    border-bottom: 2px solid	#000; }
   .table tbody + tbody {
-    border-top: 2px solid #dee2e6; }
+    border-top: 2px solid #000; }
   .table .table {
     background-color: #fff; }
 
@@ -9312,7 +9312,7 @@ article {
     opacity: 1;
     float: left;
     line-height: 1; }
-  article .blockquestion {
+  .blockquestion {
     padding-left: 1rem;
     /* margin-left: 5rem; */
     margin-bottom: 2rem;

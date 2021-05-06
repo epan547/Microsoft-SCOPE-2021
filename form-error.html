@@ -66,7 +66,6 @@
       <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-5 pb-0 bg-white position-relative">
 
         <div>
-
           <h1>
             <span>Purpose</span></h1>
           <p>
@@ -79,23 +78,30 @@
               presents disproportionate difficulty for screen reader users. This is because visually impaired or blind screen reader users have limited access to the visual cues that sighted users can pick up on.&nbsp;</span></p>
           <p>
             <span>Consider the following example of an ecommerce checkout form:&nbsp;</span></p>
-          <p>
-            <span>A user enters the shipping address with an un-supported format and submits their order only to receive a message that the form contains an error</span>
+
+          <div class="blockquestion">
+            A user enters the shipping address with an un-supported format and submits their order only to receive a message that the form contains an error
             <a href="#_ftn1">
               <span>
-                <sup>[1]</sup></span></a>
-            <span>. The success of the error recovery and form&rsquo;s completion relies on the ability of the error message to 1) draw the user&rsquo;s focus to the message, 2) communicate that an error exists and 3) communicate what that error is and/or how to
-              resolve it. Each of these key elements of an error message routinely relies on visual cues.&nbsp;</span></p>
+                <sup>[1]</sup>
+              </span>
+            </a>
+            The success of the error recovery and form&rsquo;s completion relies on the ability of the error message to 1) draw the user&rsquo;s focus to the message, 2) communicate that an error exists and 3) communicate what that error is and/or how to resolve
+            it. Each of these key elements of an error message routinely relies on visual cues.
+            <br/>
+            <br/>
+            If the user in our imagined checkout process is sighted, they might first notice a banner appear at the top of the form as a result of an attempted submission. This banner alert or the form field in question might change to a red color to indicate
+            that the field is in an error state, and a text message might state why the field is in error. With this information, our sighted user resolves the error and submits their form with minimal difficulty.
+            <br/>
+            <br/>
+            If, however, our imagined user is blind and using a screen reader, they may not notice the appearance of an alert unless the site is coded to draw a screen reader&rsquo;s focus to the error message. They will also not observe the color change of the
+            form and, depending on the site&rsquo;s coding, may not receive any indication that their form failed to submit due to an error. The user would then need to intuit that there is an error and search the form for the written message indicating why.
+            Upon finding the error message at the top of the form and learning that the shipping address contains a formatting error, the screen reader user must then navigate back down through the form to the shipping address and again deduce which of the
+            street address, city, state, country and zip code fields contains the format error. Only then can they resolve the problem and move forward with their task.
+          </div>
           <p>
-            <span>If the user in our imagined checkout process is sighted, they might first notice a banner appear at the top of the form as a result of an attempted submission. This banner alert or the form field in question might change to a red color to
-              indicate that the field is in an error state, and a text message might state why the field is in error. With this information, our sighted user resolves the error and submits their form with minimal difficulty.&nbsp;</span></p>
-          <p>
-            <span>If, however, our imagined user is blind and using a screen reader, they may not notice the appearance of an alert unless the site is coded to draw a screen reader&rsquo;s focus to the error message. They will also not observe the color change
-              of the form and, depending on the site&rsquo;s coding, may not receive any indication that their form failed to submit due to an error. The user would then need to intuit that there is an error and search the form for the written message indicating
-              why. Upon finding the error message at the top of the form and learning that the shipping address contains a formatting error, the screen reader user must then navigate back down through the form to the shipping address and again deduce which of the
-              street address, city, state, country and zip code fields contains the format error. Only then can they resolve the problem and move forward with their task.</span></p>
-          <p>
-            <span>This example illustrates the potential difficulty that screen reader users face when they must troubleshoot a form without access to the visual syntax communicated by an inaccessible error message.&nbsp;</span></p>
+            <span>
+              This example illustrates the potential difficulty that screen reader users face when they must troubleshoot a form without access to the visual syntax communicated by an inaccessible error message.&nbsp;</span></p>
           <h1>
             <span>User Scenarios</span></h1>
           <p>
@@ -110,10 +116,13 @@
             <span>One of the most consistent themes we heard throughout our research was the importance of online shopping for people who are blind (see our whitepaper on HCD results for more). With many barriers in the physical world precluding people who are
               blind from easily acquiring food, medicines and other goods, many of our interviewees expressed that they would prefer to shop online &ndash; if it were made accessible to them.&nbsp;</span></p>
           <p>
-            <span>One such survey respondent, Maria, went further to describe how she adapts to accessibility issues when shopping online. She explains, &ldquo;Even though earlier steps can also be inaccessible, I can find work-arounds. For instance, reading
-              reviews and comparing products on other more accessible websites before going to a shopping website with a product already in mind. It&apos;s the check-out inaccessibility that I really can&apos;t avoid&rdquo;.</span>
-            <em>
-              <span>&nbsp;</span></em>
+            <span>One such survey respondent, Maria, went further to describe how she adapts to accessibility issues when shopping online. She explains,</span>
+
+            <div class="blockquestion">
+              "Even though earlier steps can also be inaccessible, I can find work-arounds. For instance, reading reviews and comparing products on other more accessible websites before going to a shopping website with a product already in mind. It's the check-out
+              inaccessibility that I really can't avoid."
+            </div>
+
             <span>In this case, Maria has developed a strategy for circumventing the accessibility failures of Amazon product pages by learning product information from sites that are easier to search and browse. While this trick helps her move past some
               accessibility blockers, others, particularly during the form-heavy checkout process, cannot be avoided as they are essential to the task at hand.&nbsp;</span></p>
           <p>
@@ -128,18 +137,20 @@
           <p>
             <span>One of our survey respondents, Linda, is a travel advisor who often booked flights for clients. She described a common issue on booking engines:&nbsp;</span></p>
           <p>
-            <em>
-              <span>I&apos;ve noticed that in some cases, typing in a date or number of passengers or rooms doesn&apos;t necessarily remove whatever is there by default. This can result in unnecessary errors. For example, I think I&apos;ve typed in 3 passengers,
-                not knowing that the default number is 2, making the total number of passengers listed as 23. With dates, I might type 03/13/2021, not realizing that the default date of 02/08/2021 was the default, resulting in an error message asking me to type in a
-                valid date.</span></em>
+            <div class="blockquestion">
+              "I've noticed that in some cases, typing in a date or number of passengers or rooms doesn&apos;t necessarily remove whatever is there by default. This can result in unnecessary errors. For example, I think I&apos;ve typed in 3 passengers, not knowing
+              that the default number is 2, making the total number of passengers listed as 23. With dates, I might type 03/13/2021, not realizing that the default date of 02/08/2021 was the default, resulting in an error message asking me to type in a valid
+              date."
+            </div>
           </p>
           <p>
-            <span>Here Linda describes a common form usability flaw that leads to a high error rate. While Linda described a situation that she could easily resolve with the notice of an invalid date, she also recounted her frustrations when such error recovery
-              is not possible:</span></p>
+            <span>Linda describes a common form usability flaw that leads to a high error rate. While Linda described a situation that she could easily resolve with the notice of an invalid date, she also recounted her frustrations when such error recovery is
+              not possible:</span></p>
           <p>
-            <em>
-              <span>Sometimes I&apos;ve had to start over from scratch, which is time-consuming and frustrating! I want to do my research as thoroughly and quickly as possible so that my client isn&apos;t inconvenienced because of elements like this that are
-                either completely or somewhat inaccessible.</span></em>
+            <div class="blockquestion">
+              "Sometimes I&apos;ve had to start over from scratch, which is time-consuming and frustrating! I want to do my research as thoroughly and quickly as possible so that my client isn&apos;t inconvenienced because of elements like this that are either
+              completely or somewhat inaccessible."
+            </div>
           </p>
           <p>
             <span>Since Linda&rsquo;s livelihood relies on her client&rsquo;s satisfaction, hiccups and delays throughout the booking process can add pressure to already frustrating usability issues. As an advanced screen reader user and professional travel
@@ -156,10 +167,9 @@
           <p>
             <span>Another survey respondent, Alex, is a job placement counselor with low vision who said:</span></p>
           <p>
-            <em>
-              <span>The process of applying for jobs is the most inaccessible. There can be errors in formatting that are not clear and do not allow you to proceed&hellip; really the process can be a complete barrier to employment</span></em>
-            <em>
-              <span>.&nbsp;</span></em>
+            <div class="blockquestion">
+              "The process of applying for jobs is the most inaccessible. There can be errors in formatting that are not clear and do not allow you to proceed&hellip; really the process can be a complete barrier to employment"
+            </div>
           </p>
           <p>
             <span>Though an ambiguous error message may seem innocent enough, if you cannot observe the formatting discrepancy, recovery is much more challenging and can completely disrupt one&rsquo;s task. If that task is as essential as a job application form,
