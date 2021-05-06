@@ -2,15 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon.ico">
-		<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<title>The Human Impact of Web Accessibility Challenges</title>
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
 		<!-- Font Awesome Icons -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
 		<!-- Main CSS -->
 		<link href="./main.css" rel="stylesheet"/>
 	</head>
@@ -53,7 +51,7 @@
 								People who want to understand how accessibility problems can affect lives of screen reader users.
 							</p>
 							<div class="d-flex align-items-center">
-								<img class="rounded-circle" src="./images/olinlogo_cropped.jpg" width="70">
+								<img class="rounded-circle" src="./images/olinlogo_cropped.jpg" width="70" alt="Olin College of Engineering Logo">
 								<!-- <img class="rounded-circle" src="./images/emma.jpg" width="70"> <img class="rounded-circle" style="margin-left:10px;" src="./images/libby_cropped.png" width="70"> -->
 								<small class="ml-2">Olin Microsoft SCOPE Team
 									<span class="text-muted d-block">May 10, 2021 &middot; 15 min. read</span>
@@ -61,7 +59,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 pr-0">
-							<img style="margin-top: 3em;" src="./images/HCD Image.png">
+							<img style="margin-top: 3em;" src="./images/HCD Image.png" alt="Person who is using a screen reader to access shopping, banking, travel, employment, and social media websites.">
 						</div>
 					</div>
 				</div>
@@ -71,6 +69,22 @@
 		<!-- MAIN --------------------------------------->
 		<div class="container pt-4 pb-4">
 			<div class="row justify-content-center">
+				<div class="col-lg-2 pr-4 mb-4 col-md-12">
+					<div class="sticky-top text-center">
+						<div class="text-muted">
+							Share this
+						</div>
+						<div class="share d-inline-block">
+							<!-- AddToAny BEGIN -->
+							<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+								<a class="a2a_button_linkedin"></a>
+								<a class="a2a_button_twitter"></a>
+							</div>
+							<script async="async" src="https://static.addtoany.com/menu/page.js"></script>
+							<!-- AddToAny END -->
+						</div>
+					</div>
+				</div>
 
 				<div class="col-md-12 col-lg-8">
 					<article class="article-post">
@@ -146,22 +160,25 @@
 						<p>As a result of our interview and survey process, we discovered four broad usability insights.</p>
 						<h3>Website Types that Matter Most</h3>
 						<p>
-							In order to understand which websites to target for accessibility improvements, we asked web users who are blind -<em>If you could snap your fingers and have one type of website become totally accessible to you today, which type would you choose?</em>
+							In order to understand which websites to target for accessibility improvements, we asked web users who are blind –
+							<div class="blockquestion">
+								If you could snap your fingers and have one type of website become totally accessible to you today, which type would you choose?
+							</div>
 							Of 38 participants, 39.5% chose ecommerce sites and 21.1% chose banking sites.
 						</p>
 						<p>
 							Our interviews revealed that accessible ecommerce sites are crucial for people who are blind because they, like everyone, need essentials like food, medications, clothing, and household items. Online shopping is particularly attractive for this group
 							because they encounter challenges in the physical world that make it hard to access a store independently. For example, driving is the primary mode of transportation in the US, and people who are fully blind can’t drive.</p>
 						<p>
-							While discussing the ways that online shopping could help, Lena aired her frustrations with inaccessible ecommerce sites. She said, “this is an option that should open doors but is shutting me out even more.” Even big-name companies like Amazon and
-							Walmart are dropping the ball on accessibility, according to blind users. Factors like clutter, inconsistent controls, and site updates make for an all-around overwhelming experience. Mitchel, a highly advanced screen reader user, put it bluntly.
+							While discussing the ways that online shopping could help, Lena aired her frustrations with inaccessible ecommerce sites. She said,
 						</p>
-						<div class="blockquote">
-							If you don't know exactly what you're trying to find on Amazon, you won't find it.
-						</div>
-						<blockquote>
-							If you don't know exactly what you're trying to find on Amazon, you won't find it.
+						<blockquote class="blockquote">
+							This is an option that should open doors but is shutting me out even more.
 						</blockquote>
+						<p>
+							Even big-name companies like Amazon and Walmart are dropping the ball on accessibility, according to blind users. Factors like clutter, inconsistent controls, and site updates make for an all-around overwhelming experience. Mitchel, a highly advanced
+							screen reader user, put it bluntly – "If you don't know exactly what you're trying to find on Amazon, you won't find it."
+						</p>
 						<p>
 							Accessible banking sites are also top priority for the blind community because being able to manage finances is critical for a secure, stable, and independent life. Based on her work as an accessibility advocate, Elena points out that "lots of people
 							are willing to get assistance for things like shopping, but don't want to give out their financial information." This brings to light the fact that blind individuals face very real security risks when banking sites are inaccessible, because
@@ -170,10 +187,15 @@
 						<h3>Prioritization of Accessibility Issues</h3>
 						<p>
 							To understand which types of problems should be fixed first, we asked users –
-							<em>What kinds of accessibility issues are the highest priority for you?</em>
+							<div class="blockquestion">
+								What kinds of accessibility issues are the highest priority for you?
+							</div>
 							Overwhelmingly, we heard that blind users prioritize issues that fully block their progress, like a button that cannot be clicked with a screen reader. One of our interviewees detailed the many strategies she uses to get around inaccessibility. She
-							is willing to invest her time in sheer trial and error to find what she needs, or to completely redo a process with a different screen-reader/browser combination, but she said, “when I'm stopped dead in my tracks, that's when I really feel defeated."
+							is willing to invest her time in sheer trial and error to find what she needs, or to completely redo a process with a different screen-reader/browser combination, but she said,
 						</p>
+						<blockquote class="blockquote">
+							When I'm stopped dead in my tracks, that's when I really feel defeated.
+						</blockquote>
 						<p>
 							Prioritization of blocking issues might seem like an obvious result, but before asking, it seemed equally likely that users would care about smaller challenges that they experience constantly, like a lack of hierarchy. When websites use visual cues
 							such as boldfacing and larger point sizes, rather than screen-reader accessible markup such as HTML header tags, blind users have to click through all kinds of irrelevant information to find what they need, which takes a lot of time and metal strain.
@@ -189,9 +211,15 @@
 						</p>
 						<h3>Screen Reader Linearity and Clutter</h3>
 						<p>
-							In our interviews with blind users, it quickly became clear that clutter is a problem that looms over every web interaction for the blind community. While normally a frustration, clutter can be completely blocking in some scenarios. As Vanessa put
-							it, navigating a website with a screen reader often feels "kind of like walking through a mall with multiple kids, and they all see something they want." All kinds of website features vie for the screen reader’s attention - ads, menus, detailed
-							descriptions, links, pop-ups, and the list goes on.</p>
+							In our interviews with blind users, it quickly became clear that clutter is a problem that looms over every web interaction for the blind community. While normally a frustration, clutter can be completely blocking in some scenarios. Vanessa explained
+							that navigating a website with a screen reader often feels:
+						</p>
+						<blockquote class="blockquote">
+							kind of like walking through a mall with multiple kids, and they all see something they want.
+						</blockquote>
+						<p>
+							Many types of website features vie for the screen reader’s attention - ads, menus, detailed descriptions, links, pop-ups, and the list goes on.
+						</p>
 						<p>
 							Users need access to all these features. The challenge is that screen readers parse web pages linearly. Accessible features like headers and ARIA landmarks help users skip over irrelevant content, but even with these shortcuts, the screen reader
 							focus is still easy to “distract,” as Vanessa consistently put it. One answer to this is an emphasis on screen reader customizability that gives users control over what information they receive. That way, they can decide for themselves what kinds of
@@ -215,19 +243,26 @@
 							on where they appear.
 						</p>
 						<p>
-							In many of the anecdotes we’ve collected, our interviewees have expressed feeling dehumanized when they constantly encounter accessibility issues. Alex, a survey respondent, wrote, “sometimes I feel frustrated, and as if some companies aren't
-							interested in money from individuals who are blind.” Websites that block screen reader users from accessing products and services are deprioritizing and excluding the blind community from their customer base.
+							In many of the anecdotes we’ve collected, our interviewees have expressed feeling dehumanized when they constantly encounter accessibility issues. Alex, a survey respondent, wrote,
+						</p>
+						<blockquote class="blockquote">
+							Sometimes I feel frustrated, and as if some companies aren't interested in money from individuals who are blind.
+						</blockquote>
+						<p>
+							Websites that block screen reader users from accessing products and services are deprioritizing and excluding the blind community from their customer base.
 						</p>
 						<p>
-							Another example of dehumanization that came up often was the “I am not a robot” CAPTCHA. That CAPTCHA is specifically designed so that only a mouse can click the check box in order to protect against bots. But, in the process, it also shuts out
-							screen reader users, and it’s language insinuates that a person is not a person without sight.</p>
+							Another example of dehumanization that came up often was the “I am not a robot” CAPTCHA. That authentication method is specifically designed so that only a mouse can click the check box in order to protect against bots. But, in the process, it also
+							shuts out screen reader users, and its language
+							<strong>insinuates that a person is only a person if they have sight</strong>.
+						</p>
 						<p>
 							Our team acknowledges that incorporating accessibility into web development takes effort and can feel extraneous when developers don’t understand how it translates to people’s lives. That’s why we encourage everyone to understand how accessible
-							interfaces allow certain individuals the freedom to be independent, how they can prevent severe consequences in a person’s life, and how they help everyone feel included, cared for, and humanized.
+							interfaces can help people gain autonomy, and consider people who are blind while designing websites. By raising awareness of the significance of these issues, we can help everyone feel included, cared for, and humanized.
 						</p>
 						<h2>Takeaways</h2>
-						<p>Through 9 months of usability research, our team has identified several key takeaways that can improve the state of accessibility. Below, we summarize those takeaways and outline actions that web developers and assistive technology (AT) developers
-							can take to help.
+						<p>After 9 months of usability research, our team has identified several key takeaways that can improve the state of accessibility. Below, we summarize those takeaways and outline actions that web developers and assistive technology (AT) developers
+							can take to help make the internet a more welcoming place.
 						</p>
 						<ol class="list-featured">
 							<li>
@@ -284,22 +319,6 @@
 							Implementing these recommendations is no easy task. But, making these changes would significantly improve the lives of web users who are blind, well beyond the screen and make the web a more accessible place for everyone.
 						</p>
 					</article>
-				</div>
-				<div class="col-lg-2 pr-4 mb-4 col-md-12">
-					<div class="sticky-top text-center">
-						<div class="text-muted">
-							Share this
-						</div>
-						<div class="share d-inline-block">
-							<!-- AddToAny BEGIN -->
-							<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-								<a class="a2a_button_linkedin"></a>
-								<a class="a2a_button_twitter"></a>
-							</div>
-							<script async="async" src="https://static.addtoany.com/menu/page.js"></script>
-							<!-- AddToAny END -->
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

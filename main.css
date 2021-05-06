@@ -2005,28 +2005,14 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
-.btn-primary {
+.btn-portfolio {
   color: #fff;
-  background-color: #03a87c;
-  border-color: #03a87c; }
-  .btn-primary:hover {
+  background-color: #B965A7;
+  text-decoration: none;}
+  .btn-portfolio:hover {
     color: #fff;
-    background-color: #028260;
-    border-color: #027657; }
-  .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
-  .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #03a87c;
-    border-color: #03a87c; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #027657;
-    border-color: #02694e; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
+    background-color: #7a426e;
+    text-decoration: none;}
 
 .btn-secondary {
   color: #fff;
@@ -2050,6 +2036,14 @@ fieldset:disabled a.btn {
     .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-secondary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(120, 50, 226, 0.5); }
+
+.btn-linkedin {
+  background-color: #0e76a8 !important;
+  color: #fff;
+} .btn-linkedin:hover{
+  color: #fff;
+  background-color: #095073 !important;
+}
 
 .btn-success {
   color: #fff;
@@ -9308,12 +9302,6 @@ article {
     margin-left: 5rem;
     font-style: italic;
     position: relative;}
-  article .blockquote {
-    padding-left: 1rem;
-    margin-left: 5rem;
-    font-style: italic;
-    position: relative;
-    border-left: 5px solid #05A6F0; }
   article blockquote:before {
     content: "“";
     font-family: "Playfair Display";
@@ -9324,6 +9312,13 @@ article {
     opacity: 1;
     float: left;
     line-height: 1; }
+  article .blockquestion {
+    padding-left: 1rem;
+    /* margin-left: 5rem; */
+    margin-bottom: 2rem;
+    font-style: italic;
+    position: relative;
+    border-left: 5px solid #05A6F0; }
 
   /* article:first-letter {
     float: left;
